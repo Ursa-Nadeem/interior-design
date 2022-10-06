@@ -1,0 +1,207 @@
+.mainContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../src/Assets/images2.jpg");
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.appBar {
+    background-color: transparent !important;
+}
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+    box-shadow: none !important;
+}
+
+.imageContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 15em;
+}
+
+.headerText {
+    width: 100%;
+    margin: 10px;
+    height: 300px;
+}
+
+.headerText h1 {
+    font-size: 40px;
+    color: #FAB407;
+}
+
+.paragraphInterior {
+    width: 70%;
+    text-align: Justify;
+    font-size: 20px;
+}
+
+*/ .imageHeader {
+    width: 30%;
+    margin: 10px;
+}
+
+.imgHeaderSmall {
+    height: 70vh;
+    width: 100%;
+}
+
+/* button */
+.btn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: white;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+}
+
+.btn::after,::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+
+.btn::after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+}
+
+.btn::before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.btn:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.btn::before,::after {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .btn{
+    background: transparent;
+    border: 1px solid #FAB407;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.btn:hover{
+    background-color: #FAB407;
+    color: white;
+} */
+
+@media screen and (max-width: 1150px) {
+    .paragraphInterior {
+        width: 80%;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .imgHeaderSmall {
+        margin-top: 1.5em;
+        height: 50vh;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+        margin-top: 0.3em;
+    }
+
+}
+
+/* text section */
+.text_Section {
+
+    margin-top: 12em;
+}
+
+.head4 {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Arimo", Arial, Helvetica, sans-serif;
+    list-style: 5px;
+}
+
+.head1 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 9px;
+    color: #FAB407;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.para {
+
+    width: 50%;
+    text-align: Justify;
+    margin-left: 18em;
+    /* text-align: center; */
+    font-size: 1.17rem;
+    /* line-height: 25px; */
+    font-weight: 500;
+}
+
+.line {
+
+    border: 2px solid blue;
+    width: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    .head1 {
+        font-size: 30px;
+    }
+
+    .para {
+        margin-left: 2px;
+        width: 97%;
+    }
+}
+
+/* About us  */
+.About_Section{
+   
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+}
+
+.img_Section{
+    width: 50%;
+  
+}
+.pic{
+    width: 100%;
+}
+.text_img{
+    background-color: aqua;
+    width: 50%;
+  
+}
+.text_img h1{
+    margin: 50px;
+    padding: 20px;
+}
