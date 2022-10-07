@@ -16,6 +16,8 @@ const Services = () => {
    <>
    {/* navbar */}
    <nav>
+    <div className='main-services'>
+        <h1 className='head-services'>OUR SERVICES</h1>
     <div className='navbar'>
         <div className='btn-group'></div>
         <button className='btn-group__item' onClick={() => setProductData(Product)}>All</button>
@@ -28,6 +30,7 @@ const Services = () => {
         <button className='btn-group__item' onClick={() => filterItem("windowblind")}>Window blind</button>
         <button className='btn-group__item' onClick={() => filterItem("vinyleflooring")}>Vinyle flooring</button>
         <button className='btn-group__item' onClick={() => filterItem("fupvcdoor")}>Upvc Door</button>
+    </div>
     </div>
    </nav>
    {/* props */}

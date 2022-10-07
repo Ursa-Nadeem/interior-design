@@ -9,6 +9,7 @@ const AboutUs = () => {
         </div>
         <div className='text_img'>
            <h1>WHAT WE DO</h1>
+           <p></p>
         </div>
     </div>
   )
