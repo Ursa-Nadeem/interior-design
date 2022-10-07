@@ -4,6 +4,7 @@ import Navbar from './Components.jsx/Navbar'
 import './App.css';
 import Text from './Components.jsx/Text';
 import AboutUs from './Components.jsx/About Us';
+import Services from './Components.jsx/Services';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
     <Navbar/>
     <Text/>
     <AboutUs/>
+    <Services/>
     </>
   )
 }
