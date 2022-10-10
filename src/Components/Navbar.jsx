@@ -36,7 +36,7 @@ const ResponsiveAppBar = () => {
 
   return (
     <>
-      <div className="mainContainer">
+      {/* <div className="mainContainer"> */}
         <AppBar position="static" className='appBar'>
           <Container maxWidth="xl">
             <Toolbar disableGutters>
@@ -126,12 +126,17 @@ const ResponsiveAppBar = () => {
                 ))}
               </Box>
             </Toolbar>
+
+
             <div className="imageContainer">
               <div className='headerText'>
                 <Fade left>
-                  <h1>Interior Design</h1>
-                  <p className='paragraphInterior'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button className='btn'>Our Porfolio</button>
+                
+                  <h1 className='about-us'>Interior Design</h1>
+        
+        <p className='banner-para'>One of the reasons we became interior designers in the first place was because we love collecting and then putting it all together. 
+          But when you’re designing your own house, the hardest thing is to finish it, as you’re always adding your next favourite thing, and finally there’s no space left.</p>
+          <button className='btn-banner'>Our Portfolio</button>
                 </Fade>
 
 
@@ -145,7 +150,7 @@ const ResponsiveAppBar = () => {
           </Container>
         </AppBar>
 
-      </div>
+      {/* </div> */}
 
 
     </>

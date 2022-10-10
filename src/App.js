@@ -1,20 +1,26 @@
-
 import React from 'react';
-import Navbar from './Components.jsx/Navbar'
 import './App.css';
-import Text from './Components.jsx/Text';
-import AboutUs from './Components.jsx/About Us';
-import Services from './Components.jsx/Services';
-import Footer from './Components.jsx/Footer';
+import 'antd/dist/antd.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbars from './Components/Navbars';
+import Home from './Components/Home';
+import Portfolio from './Components/Portfolio';
+import Contact from './Components/Contact';
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
     <>
-    <Navbar/>
-    <Text/>
-    <AboutUs/>
-    <Services/>
-    <Footer/>
+      <Navbars />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='portfolio' element={<Portfolio />} />
+          <Route exact path='contact' element={<Contact />} />
+        </Routes>
+
+      </BrowserRouter>
     </>
   )
 }
