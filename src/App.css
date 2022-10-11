@@ -277,7 +277,12 @@
   width: 70%;
   text-align: Justify;
   font-size: 15px;
-
+ 
+}
+.about-para-service{
+  width: 70%;
+  text-align: Justify;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -291,13 +296,20 @@
   }
 
   .about-img {
-    margin-left: 70px;
+    /* margin-left: 10px; */
+    text-align: center;
+  }
+  .about-para{
+    text-align: center !important;
+    width: 100%;
   }
 
   .portfolio-text {
     padding: 50px;
-    margin: 70px;
+    margin: 0%;
+    text-align: center;
   }
+ 
 
   .css-uym98a-MuiImageList-root {
     width: 470px !important;
@@ -306,6 +318,9 @@
 
   .row>* {
     margin-bottom: 10px;
+  }
+  .css-uym98a-MuiImageList-root{
+    width: 430px !important;
   }
 }
 
@@ -452,6 +467,10 @@
 .leftConcept {
   width: 50%;
 }
+.row{
+  margin-right: 0px !important;
+  
+}
 
 .rightConcept {
   width: 50%;
@@ -495,7 +514,8 @@
   width: 100%;
 }
  .rightConcept{
-  width: 100%;
+  width: 90%;
+  /* margin-left: 60px; */
  }   
  .concept-para{
   text-align: justify;
@@ -508,6 +528,18 @@
   align-self: center;
 }
     
+}
+/* ---------------contact---------------- */
+.mainConcept-contact{
+  background-color: #FCF6E7;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+@media (max-width: 998px){
+  .map{
+    width: 100%;
+  }
 }
 
 /* --------------Footer----------------- */
@@ -639,7 +671,7 @@ background-color: blueviolet;
 
 .inner-grid img {
   margin-top: 8px;
-  width: 120%;
+  width: 100%;
   padding: 8px;
 
 }
@@ -668,10 +700,12 @@ background-color: blueviolet;
   width: 100%;
   height: 500px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../src/Assets/baner1.jpg");
- 
   background-repeat: no-repeat;
   background-size: cover;
   
+}
+.images-color{
+  background-color: #FCF6E7;
 }
 .portfolioText{
   position: absolute;
@@ -700,17 +734,12 @@ background-color: blueviolet;
 } */
 
 @media (max-width: 998px){
-  /* .portfolio-head{
-    font-size: 50px;
+  .css-k2d9o5-MuiGrid-root {
+    margin-top: 50px;
   }
-  .portfolio-para{
-    font-size: 20px;
-    text-align: center !important;
-  }
-  .portfolio-text{
-    top: 28%;
-    text-align: center;
-    transform: none;
-    left: 18%;
-  } */
+}
+.livingRoom{
+  /* background-color: #FAB407; */
+  /* height:250px ; */
+  
 }

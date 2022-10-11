@@ -13,7 +13,7 @@ const Concepts = () => {
                 </div>
                 <div className="rightConcept">
                     <Row className='circle'>
-                        <Col sm={4} md={4} xl={3}>
+                        <Col sm={4} md={4} xl={3} xs={6}>
                             <Progress
                                 type="circle"
                                 strokeColor={{
@@ -26,7 +26,7 @@ const Concepts = () => {
                         </Col>
 
 
-                        <Col sm={4} md={4} xl={3}>
+                        <Col sm={4} md={4} xl={3} xs={6}>
                             <Progress
                                 type="circle"
                                 strokeColor={{
@@ -38,7 +38,7 @@ const Concepts = () => {
                             />
                             <h4>Approved</h4>
                         </Col>
-                        <Col sm={4} md={4} xl={3}>
+                        <Col sm={4} md={4} xl={3} xs={5}>
                             <Progress
                                 type="circle"
                                 strokeColor={{

@@ -5,53 +5,84 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import living1 from "../Assets/living room/livingroom1.jpg";
+import living2 from "../Assets/living room/livingroom2.jpg";
+import living3 from "../Assets/living room/livingroom3.jpg";
+import living4 from "../Assets/living room/livingroom4.jpg";
+import living5 from "../Assets/living room/livingroom5.jpg";
+import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
+import Bedrooms from './Bedrooms';
+import Office from './Office'
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
+const livingRooms = [
+  {
+    img: living1,
+  },
+  {
+    img: living2,
+  },
+  {
+    img: living3,
+  },
+  {
+    img: living4,
+  },
+  {
+    img: living5,
+  }
+];
 
 const Portfolio = () => {
   return (
     <>
       <div className='mainPortfolio'>
-      
+
+{/* images */}
+
+   
         <div className="portfolioText">
-        <Roll left>
-          <p >OUR EXCLUSIVE CLIENT</p>
-          <h1 style={{color: '#FAB407' ,fontSize:'70px'}}>Project Sites</h1>
-          <p style={{fontSize:'20px'}}>We Have Solutions For All Your Space Related Issues!</p>
+          <Roll left>
+            {/* <p >OUR EXCLUSIVE CLIENT</p> */}
+            <h1 style={{ color: '#FAB407', fontSize: '70px' }}>OUR PROJECTS</h1>
+            <p style={{ fontSize: '20px' }}>We Have Solutions For All Your Space Related Issues!</p>
           </Roll>
         </div>
-        </div>
+      </div>
 
-        {/* Grid */}
-        <Box sx={{ width: '100%' }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 0, sm: 0, md: 0 }}>
-        <Grid item xs={4}>
-          <Item>1</Item>
+      {/* Grid */}
+      <div className='images-color' >
+      <Box
+        pl={{ sm: 10 }} pr={{ sm: 10 }}
+        py={{ sm: 10 }}
+
+      >
+        <Grid container rowSpacing={0} columnSpacing={{ xs: 0, sm: 0, md: 0 }}
+          spacing={{ sm: 0 }}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Grid item xs={6} lg={3.5} md={4} sm={6}>
+            <div className='livingRoom' >
+              <h1>Living Room</h1>
+              <p>It's the perfect space to be inspired. It's a place to explore. A place to imagine. A place to be creative. And it can be yours.</p>
+            </div>
+          </Grid>
+          {livingRooms?.map((v, i) => {
+            return (
+              <Grid item xs={6} lg={3.5} md={4} sm={6}>
+                <img src={v?.img} style={{ width: '350px', height: '250px' }} />
+              </Grid>
+            );
+          })}
         </Grid>
-        <Grid item xs={4}>
-          <img src={living1} style={{width:'500px'}} />
-        </Grid>
-        <Grid item xs={4}>
-          <Item>3</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>4</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>4</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>4</Item>
-        </Grid>
-      </Grid>
-    </Box>
+      </Box>
+      <Bedrooms/>
+      <Office />
+      </div>
     </>
+
+
   )
 }
 

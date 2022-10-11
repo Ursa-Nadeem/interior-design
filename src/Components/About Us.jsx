@@ -104,17 +104,16 @@ const AboutUs = () => {
         <Fade right>
         <h1 className='about-us'>WHAT WE DO</h1>
         <h1 className='footer-heading1'>Let’s design together</h1>
-        {/* <hr className='footer-line'/> */}
         <p className='about-para'>One of the reasons we became interior designers in the first place was because we love collecting and then putting it all together. 
           But when you’re designing your own house, the hardest thing is to finish it, as you’re always adding your next favourite thing, and finally there’s no space left.</p>
           <button className='btn2'>Our Portfolio</button>
           </Fade>
         </Col>
-      
+       
       </Row>
 
       {/* second */}
-      <Row>
+      <Row> 
         
         <Col className='portfolio-text'>
           <Fade left>
