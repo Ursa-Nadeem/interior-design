@@ -1,18 +1,19 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import Fade from 'react-reveal/Fade';
 
 const ProductCard = ({ productData }) => {
   console.log(productData);
   return (
     <>
       <Box
-        pl={{ sm: 9 }} pr={{ sm: 5 }}
-        py={{ sm: 10 }}
+        pl={{ sm: 3 }} pr={{ sm:2 }}
+        py={{ sm: 1 }}
 
       >
         <Grid container rowSpacing={1}
-          spacing={{ sm: 0 }}
+          spacing={{ sm:1 }}
           direction="row"
           justifyContent="center"
           alignItems="center"
@@ -20,9 +21,15 @@ const ProductCard = ({ productData }) => {
 
           {productData.map((curElem) => {
             return (
-              <Grid item xs={6} lg={3.5} md={4} sm={6}>
-                <img src={curElem.image} style={{ width: '350px', height: '250px' }} />
+              
+              <Grid item xs={12} lg={3} md={4} sm={6} className="image-grid">
+                <Fade bottom>
+                  <div className='container-img'>
+                <img src={curElem.image} className="servicesImages" />
+                </div>
+                </Fade>
               </Grid>
+            
             )
           })}
         </Grid>
