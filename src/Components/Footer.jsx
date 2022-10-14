@@ -51,11 +51,11 @@ const Footer = () => {
 
             <Col className='col2'>
               <h1 className='footer-heading2'>Contact</h1>
-              <p className='contact-para'><span><ImLocation2 size='1rem' color='#FAB407' /></span>51-Green nursery shahrah-e-faisal p.e.c.h.s Block-6</p>
-              <p className='contact-para'><span><BsTelephoneFill size='1rem' color='#FAB407' /></span>0333-2269011</p>
-              <p className='contact-para'><span><BsTelephoneFill size='1rem' color='#FAB407' /></span>0305-2833311</p>
-              <p className='contact-para'><span><BsTelephoneFill size='1rem' color='#FAB407' /></span>0305-2833311</p>
-              <p className='contact-para'><span><MdEmail size='1rem' color='#FAB407' /></span>viewerscollection@yahoo.com</p>
+              <p className='contact-para'><span><ImLocation2 size='1rem' color='#F78537' /></span>51-Green nursery shahrah-e-faisal p.e.c.h.s Block-6</p>
+              <p className='contact-para'><span><BsTelephoneFill size='1rem' color='#F78537' /></span>0333-2269011</p>
+              <p className='contact-para'><span><BsTelephoneFill size='1rem' color='#F78537' /></span>0305-2833311</p>
+              <p className='contact-para'><span><BsTelephoneFill size='1rem' color='#F78537' /></span>0305-2833311</p>
+              <p className='contact-para'><span><MdEmail size='1rem' color='#F78537' /></span>viewerscollection@yahoo.com</p>
             </Col>
 
             <Col className='col3'>
@@ -81,8 +81,8 @@ const Footer = () => {
                 </Grid>
               </Box>
               <Box>
-               <span style={{display:"flex"}}><BsFacebook color='blue' size='2rem' className='fbicon' />
-               <AiOutlineInstagram color='blue' size='2rem' className='intaicon' /></span>
+               <span style={{display:"flex"}}><BsFacebook color='F78537' size='2rem' className='fbicon' />
+               <AiOutlineInstagram color='F78537' size='2rem' className='intaicon' /></span>
                </Box>
                </div>
             </Col>

@@ -16,11 +16,11 @@ const Contact = () => {
         <div className="rightConcept1">
           <div style={{marginTop:'50px'}}>
           <h1 style={{fontSize:'50px'}}>Contact Us</h1>
-          <p style={{color:'#000000' , fontSize:'20px'}} className='contact-para1'><ImLocation2  size='1.5rem' color='#FAB407'/>51-D Green Nursery Shahrah-e-faisal p.e.c.h.s Block-6</p>
-        <p style={{color:'#000000', fontSize:'20px'}} className='contact-para1'><BsTelephoneFill  size='1.5rem' color='#FAB407'/>0333-2269011</p>
-        <p style={{color:'#000000', fontSize:'20px'}} className='contact-para1'><BsTelephoneFill  size='1.5rem' color='#FAB407'/>0305-2833311</p>
-        <p style={{color:'#000000', fontSize:'20px'}} className='contact-para11'><BsTelephoneFill  size='1.5rem' color='#FAB407'/>0305-2833311</p>
-        <p style={{color:'#000000', fontSize:'20px'}} className='contact-para1'><MdEmail  size='1.5rem' color='#FAB407'/>viewerscollection@yahoo.com</p>
+          <p style={{color:'#000000' , fontSize:'20px'}} className='contact-para1'><ImLocation2  className='contact-icons' />51-D Green Nursery Shahrah-e-faisal p.e.c.h.s Block-6</p>
+        <p style={{color:'#000000', fontSize:'20px'}} className='contact-para1'><BsTelephoneFill className='contact-icons' />0333-2269011</p>
+        <p style={{color:'#000000', fontSize:'20px'}} className='contact-para1'><BsTelephoneFill className='contact-icons' />0305-2833311</p>
+        <p style={{color:'#000000', fontSize:'20px'}} className='contact-para11'><BsTelephoneFill className='contact-icons'  />0305-2833311</p>
+        <p style={{color:'#000000', fontSize:'20px'}} className='contact-para1'><MdEmail className='contact-icons'  />viewerscollection@yahoo.com</p>
         </div>
         </div>
       </div>

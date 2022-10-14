@@ -21,7 +21,7 @@ const Services = () => {
 
                 <div className="serviceText">
                     <Roll left>
-                        <h1 style={{ color: '#FAB407', fontSize: '70px' }}>OUR SERVICES</h1>
+                        <h1 className='service-heading'   style={{ color: '#FAB407', fontSize: '70px' }}>OUR SERVICES</h1>
                     </Roll>
                 </div>
             </div>
@@ -36,7 +36,7 @@ const Services = () => {
                         <Box
 
                             py={{ sm: 10 }}
-                            // px={{ sm: 1}}
+                        // px={{ sm: 1}}
 
                         >
                             <Grid container rowSpacing={1}
@@ -78,7 +78,7 @@ const Services = () => {
 
 
                             </Grid>
-                            <hr className='menu-line'/>
+                            <hr className='menu-line' />
                         </Box>
 
                         {/* <button className='btn-group__item' onClick={() => setProductData(Product)}>All</button>

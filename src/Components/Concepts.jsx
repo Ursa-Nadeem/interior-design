@@ -17,7 +17,7 @@ const Concepts = () => {
                             <Progress
                                 type="circle"
                                 strokeColor={{
-                                    '0%': '#FAB407',
+                                    '0%': '#F79868',
                                     '100%': 'black',
                                 }}
                                 percent={90}
@@ -30,7 +30,7 @@ const Concepts = () => {
                             <Progress
                                 type="circle"
                                 strokeColor={{
-                                    '0%': '#FAB407',
+                                    '0%': '#F79868',
                                     '100%': 'black',
                                 }}
                                 percent={95}
@@ -42,7 +42,7 @@ const Concepts = () => {
                             <Progress
                                 type="circle"
                                 strokeColor={{
-                                    '0%': '#FAB407',
+                                    '0%': '#F79868',
                                     '100%': 'black',
                                 }}
                                 percent={100}

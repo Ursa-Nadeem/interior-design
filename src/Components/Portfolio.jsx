@@ -58,7 +58,7 @@ const Portfolio = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <Grid item xs={6} lg={3.5} md={4} sm={6}>
+            <Grid item xs={12} lg={3.5} md={4} sm={6}>
               <div className='livingRoom' >
                 <h1>Living Room</h1>
                 <p>It's the perfect space to be inspired. It's a place to explore. A place to imagine. A place to be creative. And it can be yours.</p>
@@ -66,7 +66,7 @@ const Portfolio = () => {
             </Grid>
             {livingRooms?.map((v, i) => {
               return (
-                <Grid item xs={6} lg={3.5} md={4} sm={6}>
+                <Grid item xs={12} lg={3.5} md={4} sm={6}>
                   <img src={v?.img} style={{ width: '350px', height: '250px' }} />
                 </Grid>
               );

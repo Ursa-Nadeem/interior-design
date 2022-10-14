@@ -128,7 +128,9 @@ const AboutUs = () => {
 
         <Col className='portfolio-grid'> 
         <Fade Right>
-        <ImageList sx={{ width: 500, height: 450 }}>
+        <ImageList className="portfolioGridImage"
+        // sx={{ width: 500, height: 450 }}
+        >
       <ImageListItem key="Subheader" cols={2}>
        
       </ImageListItem>
