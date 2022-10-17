@@ -1,94 +1,147 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { ImLocation2 } from 'react-icons/im';
+import PlaceIcon from '@mui/icons-material/Place';
 import { BsTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
-import { BsFacebook } from 'react-icons/bs'
-import {AiOutlineInstagram} from 'react-icons/ai';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 import { Link } from 'react-router-dom';
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+// import Link from "@mui/material/Link";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PhoneIcon from "@mui/icons-material/Phone";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import BusinessIcon from "@mui/icons-material/Business";
+
 // import Portfolio from './Components/Portfolio';
 // import Contact from './Components/Contact';
 import Services from './Services';
 
-// const menufooter = [
-//   {
-//     text: 'Home',
-//     link: '/'
-//   },
-//   {
-//     text: 'Services',
-//     link:"F:\Office\React\interior-design\src\Components\Services.jsx"
-//   },
-//   {
-//     text: 'Portfolio',
-//     link: '/portfolio'
-//   },
-//   {
-//     text: 'Contact',
-//     link: '/contact'
-//   },
-// ]
+
+
+const footerMenuLink = [
+  {
+    text: "Home",
+    link: "/"
+  },
+  {
+    text: "Services",
+    link: "/services"
+  },
+  {
+    text: "Portfolio",
+    link: "/portfolio"
+  },
+  {
+    text: "Contact Us",
+    link: "/contactus"
+  },
+]
+const footerContact = [
+
+  {
+
+    icon: <PlaceIcon />,
+    text: "51-Green nursery shahrah-e-faisal p.e.c.h.s Block-6",
+  },
+  {
+
+    icon: <MailOutlineIcon />,
+    text: "viewerscollection@yahoo.com",
+  },
+  {
+    icon: <PhoneIcon />,
+    text: "0333-2269011"
+  },
+  {
+    icon: <PhoneIcon />,
+    text: "0305-2833311"
+  },
+  {
+    icon: <PhoneIcon />,
+    text: "0313-2489716"
+  },
+
+
+]
 const Footer = () => {
   return (
     <>
-      <section className='footer-section'>
-        <Container>
+      {/* <section className='footer-section'> */}
 
-          <Row>
-            <Col className='col1'>
-
-              <h1 className='footer-heading1'>Let’s design together</h1>
-              {/* <hr className='footer-line'/> */}
-              <p className='footer-para'>One of the reasons we became interior designers in the first place was because we love collecting and then putting it all together.
-                But when you’re designing your own house, the hardest thing is to finish it, as you’re always adding your next favourite thing, and finally there’s no space left.</p>
-              <button className='btn1'>Our Portfolio</button>
-
-            </Col>
-
-            <Col className='col2'>
-              <h1 className='footer-heading2'>Contact</h1>
-              <p className='contact-para'><span><ImLocation2 size='1rem' color='#F78537' /></span>51-Green nursery shahrah-e-faisal p.e.c.h.s Block-6</p>
-              <p className='contact-para'><span><BsTelephoneFill size='1rem' color='#F78537' /></span>0333-2269011</p>
-              <p className='contact-para'><span><BsTelephoneFill size='1rem' color='#F78537' /></span>0305-2833311</p>
-              <p className='contact-para'><span><BsTelephoneFill size='1rem' color='#F78537' /></span>0305-2833311</p>
-              <p className='contact-para'><span><MdEmail size='1rem' color='#F78537' /></span>viewerscollection@yahoo.com</p>
-            </Col>
-
-            <Col className='col3'>
-              <div >
-              <h1 className='footer-heading2'>Social</h1>
-             
+      <Box
+        px={{ xs: 3, sm: 30 }}
+        py={{ xs: 3, sm: 5 }}
+        className='footer-class'
+        color="white"
+      >
+        <Container maxWidth="lg" className='footer-section'>
+          <Grid container spacing={6}>
+            <Grid item xs={12} sm={6} md={3}>
               <Box>
-                <Grid  >
-                  <Box >
-                  <a href="/"className='social-menu' >Home</a>
-                  </Box>
-                 <Box>
-                 <a href="/services" className='social-menu' >Services</a>
-                 </Box>
-                  <Box>
-                  <a href="/portfolio" className='social-menu' >Portfolio</a> 
-                  </Box>
-                  <Box>
-                  <a href="/contact" className='social-menu' >Contact</a> 
-                  </Box>
-                 
-                  
-                </Grid>
+                <h2 className="Heading">Features</h2>
               </Box>
+              {footerMenuLink.map((v, i) => {
+                return (
+                  <Box>
+                    <a href={v?.link} className="linkText">{v?.text}</a>
+                    {/* <Link to={v?.link}
+                      className="linkText" color="inherit">
+                      {v?.text}
+                    </Link> */}
+
+                  </Box>
+                );
+              })}
+            </Grid>
+            {/* contact us */}
+            <Grid item xs={12} sm={6} md={6}>
               <Box>
-               <span style={{display:"flex"}}><BsFacebook color='F78537' size='2rem' className='fbicon' />
-               <AiOutlineInstagram color='F78537' size='2rem' className='intaicon' /></span>
-               </Box>
-               </div>
-            </Col>
-          </Row>
+                <h2 className="Heading">Contact Us</h2>
+              </Box>
+              {footerContact?.map((v, i) => {
+                return (
+                  <>
+                    <Box>
+                      <span className="text_contactus" >
+                        {v?.icon}
+                        {v?.text}
+                      </span>
+                    </Box>
+
+                  </>
+                );
+              })}
+
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Box>
+                <h2 className="Heading">Socials</h2>
+                <span style={{ display: "flex" }}><a href='www.facebook.com/viewerscollection'><FacebookIcon color='#fff' size='2rem' className='fbicon' /></a>
+                  <InstagramIcon color='#fff' size='2rem' className='intaicon' /></span>
+              </Box>
+
+            </Grid>
+          </Grid>
         </Container>
-      </section>
+      </Box>
+      <div className="footerCopyright">
+        <hr />
+        <div className="space"></div>
+        <div className="textFooterCopyrightdiv">
+          &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright"
+
+          > Powered By  ViewersCollections</span>
+        </div>
+
+      </div>
+
+      {/* </section> */}
 
     </>
   )

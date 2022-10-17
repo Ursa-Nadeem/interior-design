@@ -7,11 +7,13 @@ import Services from './Services';
 import Footer from './Footer';
 import Concepts from './Concepts';
 import Contact from './Contact';
+import Navbars from './Navbars';
 
 const Home = () => {
   return (
     <>
-      <div className="mainContainer">
+      <div className="mainContainer" id='home'>
+        <Navbars/>
         <div className="imageContainer">
           <div className='headerText'>
             <Fade left>

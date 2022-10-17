@@ -9,6 +9,7 @@ import living4 from "../Assets/living room/livingroom4.jpg";
 import living5 from "../Assets/living room/livingroom5.jpg";
 import Bedrooms from './Bedrooms';
 import Office from './Office'
+import Footer from './Footer'
 
 const livingRooms = [
   {
@@ -36,9 +37,8 @@ const Portfolio = () => {
         {/* images */}
 
 
-        <div className="portfolioText">
+        <div className="portfolioText" id='portfolio'>
           <Roll left>
-            {/* <p >OUR EXCLUSIVE CLIENT</p> */}
             <h1 style={{ color: '#FAB407', fontSize: '70px' }}>OUR PROJECTS</h1>
             <p style={{ fontSize: '20px' }}>We Have Solutions For All Your Space Related Issues!</p>
           </Roll>
@@ -76,6 +76,7 @@ const Portfolio = () => {
         <Bedrooms />
         <Office />
       </div>
+      <Footer />
     </>
 
 

@@ -4,6 +4,7 @@ import Product from './productApi';
 import ProductCard from './ProductCard';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import Footer from './Footer'
 
 const Services = () => {
     const [productData, setProductData] = useState(Product);
@@ -17,7 +18,7 @@ const Services = () => {
     }
     return (
         <>
-            <div className='main-services'>
+            <div className='main-services' id='services'>
 
                 <div className="serviceText">
                     <Roll left>
@@ -97,6 +98,8 @@ const Services = () => {
             </nav>
             {/* props */}
             <ProductCard productData={productData} />
+
+            <Footer />
         </>
     )
 }
