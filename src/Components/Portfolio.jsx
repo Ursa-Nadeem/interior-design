@@ -10,6 +10,7 @@ import living5 from "../Assets/living room/livingroom5.jpg";
 import Bedrooms from './Bedrooms';
 import Office from './Office'
 import Footer from './Footer'
+import Navbars from './Navbars';
 
 const livingRooms = [
   {
@@ -33,7 +34,7 @@ const Portfolio = () => {
   return (
     <>
       <div className='mainPortfolio'>
-
+      <Navbars/>
         {/* images */}
 
 

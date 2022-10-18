@@ -9,11 +9,13 @@ import Contact from './Components/Contact Us';
 import Services from './Components/Services';
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
+import Header  from './Components/Header';
 
 const App = () => {
   return (
     <>
-      {/* <Navbars /> */}
+    <Header/>
+      <Navbars />
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<Home />} />

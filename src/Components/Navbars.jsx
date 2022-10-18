@@ -7,27 +7,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Viewerescollection from '../Assets/logo/ViewersCollection.png';
 import images from '../Assets/images.jpg';
 import Fade from 'react-reveal/Fade';
+import Header from './Header';
 
 const Navbars = () => {
   return (
-   <>
-     {/* <Navbar bg="transparent"  expand="lg"  >
-      <Container  >
-        <Navbar.Brand to="/"><img src={Viewerescollection} className='logo'/></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className=" navbar-nav ms-auto">
-            <Nav.Link activeClassName='menu_active' href="/">Home</Nav.Link>
-            <Nav.Link  activeClassName='menu_active' href="/services">Services</Nav.Link>
-            <Nav.Link  activeClassName='menu_active' href="/portfolio">Portfolio</Nav.Link>
-            <Nav.Link  activeClassName='menu_active' href="/contact">Contact</Nav.Link>  
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar> */}
-
-   
-<Navbar  expand="lg">
+    <>
+      <Navbar expand="lg">
         <Container>
           <Navbar.Brand to="/"><img src={Viewerescollection} className="logo" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -35,18 +20,16 @@ const Navbars = () => {
             <Nav className="ms-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/services">Services</Nav.Link>
-             
+
               <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-           
-              
+
+
               <Nav.Link href="/contactus">Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-     
-     
-   </>
+    </>
   )
 }
 

@@ -12,8 +12,9 @@ import Navbars from './Navbars';
 const Home = () => {
   return (
     <>
+
       <div className="mainContainer" id='home'>
-        <Navbars/>
+        
         <div className="imageContainer">
           <div className='headerText'>
             <Fade left>
