@@ -20,7 +20,7 @@ const Services = () => {
     return (
         <>
             <div className='main-services' id='services'>
-            <Navbars/>
+            {/* <Navbars/> */}
                 <div className="serviceText">
                     <Roll left>
                         <h1 className='service-heading'   style={{ color: '#FAB407', fontSize: '70px' }}>OUR SERVICES</h1>

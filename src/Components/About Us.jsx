@@ -8,6 +8,7 @@ import image6 from "../Assets/vinyl-flooring.jpg";
 import image7 from "../Assets/wallpaper.jpg";
 import image8 from "../Assets/wallpic.jpg";
 import image9 from "../Assets/glasspaper.jpg";
+import image10 from '../Assets/combine2.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -77,25 +78,14 @@ const AboutUs = () => {
    
   ];
   return (
-    // <div className='About_Section'>
-    //     <div className='img_Section'>
-    //     <img src={image3} className='pic'/>
-    //     </div>
-    //     <div className='text_img'>
-    //        <h1>WHAT WE DO</h1>
-    //        <p className='about-para'>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
-    //          User generated content in real-time will have multiple touchpoints for offshoring.</p>
-    //        <p></p>
-    //     </div>
-    // </div><img src={image3} className='pic'/>
-
+    
     // <Container>
     <div className='About_Section'>
       <Row>
      
         <Col> 
         <Fade left>
-        <img src={image3} className='pic'/>
+        <img src={image10} className='pic'/>
         </Fade>
         </Col>
       
@@ -103,7 +93,7 @@ const AboutUs = () => {
         
         <Fade right>
         <h1 className='about-us'>WHAT WE DO</h1>
-        <h1 className='footer-heading1'>Let’s design together</h1>
+        <h1 className='footer-heading'>Let’s design together</h1>
         <p className='about-para'>One of the reasons we became interior designers in the first place was because we love collecting and then putting it all together. 
           But when you’re designing your own house, the hardest thing is to finish it, as you’re always adding your next favourite thing, and finally there’s no space left.</p>
           <button className='btn2'>Our Portfolio</button>
@@ -113,14 +103,15 @@ const AboutUs = () => {
       </Row>
 
       {/* second */}
-      <Row> 
+      <Row className='background-color'> 
         
         <Col className='portfolio-text'>
           <Fade left>
-        <h1 className='about-us'>OUR SERVICES</h1>
-        <h1 className='footer-heading1'>We Build Creative Interior Design</h1>
+        <h1 className='service-us'>OUR SERVICES</h1>
+        <p className='about-para-service'>We can provide different services of our clients.we can help designing with new spaces or renovating old ones.
+        we also provide advice on how to furnish and decorate the home or office.</p>
        
-        {/* <p className='about-para'>We Build Creative Interior Design</p> */}
+       
           <button className='btn3'>Our Portfolio</button>
           </Fade>
         </Col>
@@ -128,7 +119,7 @@ const AboutUs = () => {
         <Col className='portfolio-grid'> 
         <Fade Right>
         <ImageList className="portfolioGridImage"
-        // sx={{ width: 500, height: 450 }}
+       
         >
       <ImageListItem key="Subheader" cols={2}>
        
