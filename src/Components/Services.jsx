@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import Footer from './Footer'
 import Navbars from './Navbars';
 
+
 const Services = () => {
     const [productData, setProductData] = useState(Product);
 
@@ -23,7 +24,7 @@ const Services = () => {
             {/* <Navbars/> */}
                 <div className="serviceText">
                     <Roll left>
-                        <h1 className='service-heading'   style={{ color: '#FAB407', fontSize: '70px' }}>OUR SERVICES</h1>
+                        <h1 className='service-heading'   style={{ color: '#FE9C40', fontSize: '70px' }}>OUR SERVICES</h1>
                     </Roll>
                 </div>
             </div>

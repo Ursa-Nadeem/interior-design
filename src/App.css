@@ -17,7 +17,7 @@ body {
   background-color: #112134;
   width: 100%;
 }
-/* #525081 */
+
 
 /* ---------------------- */
 
@@ -45,20 +45,8 @@ body {
 
 .navbar-nav a:hover {
 
-  color: #F79868;
-  box-shadow: inset 0px -20px 10px -15px #F79868;
-      /* content: '';
-    position: absolute;
-    width: 50%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #C8523B;
-    transform-origin: bottom left;
-    transition: transform 1.5s ease-out;
-    animation: anim 3s infinite;
-    animation-direction: alternate; */
+  color: #fc9460;
+  box-shadow: inset 0px -20px 0px -15px #F79868;
 }
 
 .logo {
@@ -94,7 +82,7 @@ body {
 
 .headerText h1 {
   font-size: 40px;
-  color: #F79868;
+  color: #fd783b;
   font-weight: 600;
 }
 
@@ -271,11 +259,47 @@ body {
   margin-top: 50px;
   color: #525081;
 }
+/* service section */
 .about-para-service{
-  color: #FFFFFF;
+  color: #FFBB02;
 }
 .service-us{
-  color:#F49453;
+  color:#FFBB02;
+}
+.bar {
+  position: relative;
+  height: 2px;
+  margin-bottom: 10px;
+  background: #6a6a6a;
+  width: 0%;
+  top: 0px;
+  left: 2px;
+  box-shadow: 0 0 3px rgba(192, 192, 192, 0.9);
+  animation: fill 3s infinite alternate, colors 5s infinite alternate;
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 300px;
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-color: #112134;
+  }
+
+  50% {
+    background-color: #112134;
+  }
+
+  100% {
+    background-color: #112134;
+  }
 }
 .footer-heading2{
   text-align: justify;
@@ -285,12 +309,15 @@ body {
 }
 .portfolio-text{
   margin-top: 90px !important;
+  width: 180px;
+  position: relative;
+  margin: 0 auto;
 }
 .background-color{
   /* background: #F49453; */
   margin-top: 50px !important;
  
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../src/Assets/baner1.jpg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../src/Assets/baner1.jpg"); */
 }
 
 .btn2 {
@@ -741,7 +768,8 @@ body {
 
 .footer-class {
 
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../src/Assets/baner1.jpg");
+  /* background: linear-gradient(rgba(1, 1, 122, 150), rgba(1, 1, 122, 150)), url("../src/Assets/baner1.jpg"); */
+  background-color: #282757;
 }
 
 
@@ -754,7 +782,7 @@ body {
 }
 
 .Heading {
-  color: #F79868;
+  color: #FFBB02;
   font-weight: 600;
 }
 
@@ -769,6 +797,8 @@ body {
 .text_contactus {
   line-height: 2.5em !important;
 }
+
+
 
 .text_contactus>.MuiSvgIcon-root {
   padding: 5px;
@@ -787,7 +817,7 @@ body {
   flex-wrap: nowrap;
   height: 60px;
   /* background: linear-gradient(to left, #F49453, #525081); */
-  background-color: black
+  background-color: #112134;
 }
 
 .intaicon {
@@ -839,7 +869,7 @@ body {
 /* ----------------Portfolio--------------------- */
 .mainPortfolio {
   width: 100%;
-  height: 500px;
+  height: 400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../src/Assets/baner1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -914,6 +944,66 @@ body {
 
   }
 
+}
+/* --------Contact Us--------------------- */
+.location-icons{
+  font-size: 70px;
+  margin-left: 30%;
+}
+.location-icons:hover{
+  color: #282757;
+}
+.location-text{
+
+  flex-direction: row;
+}
+.contact-text{
+  font-size: 20px;
+  text-align: center;
+  color: #525081 ;
+  font-weight:500 ;
+  }
+
+.phone-icons{
+  font-size: 70px;
+  margin-left: 30%;
+}
+.phone-icons:hover{
+  color: #282757;
+}
+.email-icons{
+  font-size: 70px;
+  margin-left: 30%;
+}
+.email-icons:hover{
+  color: #282757;
+}
+.main-icon-box{
+  display: flex;
+
+  margin-top: 20px;
+}
+.map-contact{
+  width: 100%;
+}
+.contact-line{
+  /* display: inline-block;  */
+  position: relative;
+  color: #C8523B;
+}
+.contact-line::after{
+   /* content: '';
+    position: absolute;
+    width: 50%; */
+    /* transform: scaleX(0); */
+    /* height: 2px;
+    bottom: 0;
+    left: 0; */
+    /* background-color: #C8523B; */
+    /* transform-origin: bottom left;
+    transition: transform 1.5s ease-out;
+    animation: anim 3s infinite;
+    animation-direction: alternate;  */
 }
 
 /* .service-heading{ */

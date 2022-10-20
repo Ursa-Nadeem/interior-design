@@ -7,6 +7,7 @@ import living2 from "../Assets/living room/livingroom2.jpg";
 import living3 from "../Assets/living room/livingroom3.jpg";
 import living4 from "../Assets/living room/livingroom4.jpg";
 import living5 from "../Assets/living room/livingroom5.jpg";
+
 import Bedrooms from './Bedrooms';
 import Office from './Office'
 import Footer from './Footer'
@@ -27,20 +28,22 @@ const livingRooms = [
   },
   {
     img: living5,
-  }
+  },
+ 
+
 ];
 
 const Portfolio = () => {
   return (
     <>
       <div className='mainPortfolio'>
-      <Navbars/>
+     
         {/* images */}
 
 
         <div className="portfolioText" id='portfolio'>
           <Roll left>
-            <h1 style={{ color: '#FAB407', fontSize: '70px' }}>OUR PROJECTS</h1>
+            <h1 style={{ color: '#FE9C40', fontSize: '70px' }}>OUR PROJECTS</h1>
             <p style={{ fontSize: '20px' }}>We Have Solutions For All Your Space Related Issues!</p>
           </Roll>
         </div>

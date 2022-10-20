@@ -106,13 +106,15 @@ const AboutUs = () => {
       <Row className='background-color'> 
         
         <Col className='portfolio-text'>
-          <Fade left>
+          
         <h1 className='service-us'>OUR SERVICES</h1>
+        <div className="bar"></div>
+        <Fade left>
         <p className='about-para-service'>We can provide different services of our clients.we can help designing with new spaces or renovating old ones.
         we also provide advice on how to furnish and decorate the home or office.</p>
        
        
-          <button className='btn3'>Our Portfolio</button>
+         <a href='/services'><button className='btn3'>Our Services</button></a> 
           </Fade>
         </Col>
 

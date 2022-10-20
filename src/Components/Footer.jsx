@@ -90,10 +90,7 @@ const Footer = () => {
                 return (
                   <Box>
                     <a href={v?.link} className="linkText">{v?.text}</a>
-                    {/* <Link to={v?.link}
-                      className="linkText" color="inherit">
-                      {v?.text}
-                    </Link> */}
+                   
 
                   </Box>
                 );
