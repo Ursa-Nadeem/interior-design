@@ -9,6 +9,8 @@ import image7 from "../Assets/wallpaper.jpg";
 import image8 from "../Assets/wallpic.jpg";
 import image9 from "../Assets/glasspaper.jpg";
 import image10 from '../Assets/combine2.png';
+import image11 from '../Assets/wall texture/texture1.jpg';
+import image12 from '../Assets/carpets/carpet2.webp';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -70,11 +72,18 @@ const AboutUs = () => {
       
     },
     {
-      img: image9,
-      title: 'Glasspaper',
+      img: image11,
+      title: 'Walltexture',
       
     },
-   
+    {
+      img: image12,
+      title: 'Carpets',
+      
+    },    {
+        img: image9,
+        title: 'Glasspaper',  
+      },
    
   ];
   return (

@@ -9,6 +9,7 @@ import Concepts from './Concepts';
 import Contact from './Contact';
 import Navbars from './Navbars';
 
+
 const Home = () => {
   return (
     <>
@@ -38,6 +39,7 @@ const Home = () => {
       </div>
       <Text />
       <AboutUs />
+     
       <Concepts />
       <Contact />
       <Footer />
