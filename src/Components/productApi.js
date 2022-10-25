@@ -21,6 +21,9 @@ import al4 from "../Assets/Alum/al4.jpg";
 import wood2 from "../Assets/wooden/wood2.jpg";
 import wood3 from "../Assets/wooden/wood3.jpg";
 import wood4 from "../Assets/wooden/wood4.jpg";
+import carpet1 from "../Assets/carpets/carpet1.jpg"
+import carpet2 from "../Assets/carpets/carpet2.webp"
+import walltex1 from "../Assets/wall texture/texture1.jpg"
 
 const Product=[{
     id : 1,
@@ -136,6 +139,21 @@ const Product=[{
     id : 23,
     category: "woodflooring",
     image :wood4
+},
+{
+    id : 24,
+    category: "carpets",
+    image :carpet1
+},
+{
+    id : 25,
+    category: "carpets",
+    image :carpet2
+},
+{
+    id : 26,
+    category: "walltexture",
+    image :walltex1
 }
 ];
 

@@ -42,41 +42,47 @@ const Services = () => {
                         // px={{ sm: 1}}
 
                         >
-                            <Grid container rowSpacing={1}
+                            <Grid container rowSpacing={0}
                                 spacing={{ sm: 0 }}
                                 direction="row"
                                 justifyContent="center"
                                 alignItems="center"
                             >
-                                <Grid item xs={4} lg={0.5} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => setProductData(Product)}>All<span className='dot'></span></button>
+                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
+                                    <button className='btn-menu' onClick={() => setProductData(Product)}>All|</button>
                                 </Grid>
-                                <Grid item xs={4} lg={1.2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("aluminium")}>Aluminium<span className='dot'></span></button>
+                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
+                                    <button className='btn-menu' onClick={() => filterItem("aluminium")}>Aluminium|</button>
                                 </Grid>
-                                <Grid item xs={4} lg={1.2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("falseCeiling")}>False Ceiling<span className='dot'></span></button>
+                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
+                                    <button className='btn-menu' onClick={() => filterItem("falseCeiling")}>False Ceiling|<span className='dot'></span></button>
                                 </Grid>
-                                <Grid item xs={4} lg={1.2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("woodflooring")}>Wooden floor<span className='dot'></span></button>
+                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
+                                    <button className='btn-menu' onClick={() => filterItem("woodflooring")}>Wooden floor|<span className='dot'></span></button>
                                 </Grid>
-                                <Grid item xs={4} lg={1.2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("glasspaper")}>Glass paper<span className='dot'></span></button>
+                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
+                                    <button className='btn-menu' onClick={() => filterItem("glasspaper")}>Glass paper|<span className='dot'></span></button>
                                 </Grid>
-                                <Grid item xs={4} lg={1.2} md={2.4} sm={2.4}>
+                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
                                     <button className='btn-menu' onClick={() => filterItem("wallpic")}>Wall picture<span className='dot'></span></button>
                                 </Grid>
-                                <Grid item xs={4} lg={1.2} md={2.4} sm={2.4}>
+                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
                                     <button className='btn-menu' onClick={() => filterItem("wallpaper")}>Wall paper<span className='dot'></span></button>
                                 </Grid>
-                                <Grid item xs={4} lg={1.2} md={2.4} sm={2.4}>
+                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
                                     <button className='btn-menu' onClick={() => filterItem("windowblind")}>Window blind<span className='dot'></span></button>
                                 </Grid>
-                                <Grid item xs={4} lg={1.2} md={2.4} sm={2.4}>
+                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
                                     <button className='btn-menu' onClick={() => filterItem("vinyleflooring")}>Vinyle flooring<span className='dot'></span></button>
                                 </Grid>
-                                <Grid item xs={4} lg={1.2} md={2.4} sm={2.4}>
+                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
                                     <button className='btn-menu' onClick={() => filterItem("fupvcdoor")}>Upvc Door<span className='dot'></span></button>
+                                </Grid>
+                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
+                                    <button className='btn-menu' onClick={() => filterItem("carpets")}>Carpets<span className='dot'></span></button>
+                                </Grid>
+                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
+                                    <button className='btn-menu' onClick={() => filterItem("walltexture")}>Wall Texture<span className='dot'></span></button>
                                 </Grid>
 
 
