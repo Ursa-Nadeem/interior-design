@@ -8,6 +8,8 @@ import Footer from './Footer';
 import Concepts from './Concepts';
 import Contact from './Contact';
 import Navbars from './Navbars';
+import Product from './Product'
+import ServicesSection from './ServicesSection';
 
 
 const Home = () => {
@@ -37,9 +39,10 @@ const Home = () => {
         </div>
 
       </div>
-      <Text />
+      {/* <Text /> */}
       <AboutUs />
-     
+     <ServicesSection />
+     {/* <Product /> */}
       <Concepts />
       <Contact />
       <Footer />

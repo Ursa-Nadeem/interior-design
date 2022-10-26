@@ -21,10 +21,10 @@ const Services = () => {
     return (
         <>
             <div className='main-services' id='services'>
-            {/* <Navbars/> */}
+                {/* <Navbars/> */}
                 <div className="serviceText">
                     <Roll left>
-                        <h1 className='service-heading'   style={{ color: '#FE9C40', fontSize: '70px' }}>OUR SERVICES</h1>
+                        <h1 className='service-heading' style={{ color: '#FE9C40', fontSize: '70px' }}>OUR SERVICES</h1>
                     </Roll>
                 </div>
             </div>
@@ -36,59 +36,22 @@ const Services = () => {
                 <div className='navbar-menu'>
                     <container className='menu'>
                         <div className='btn-group'></div>
-                        <Box
+                        
 
-                            py={{ sm: 10 }}
-                        // px={{ sm: 1}}
-
-                        >
-                            <Grid container rowSpacing={0}
-                                spacing={{ sm: 0 }}
-                                direction="row"
-                                justifyContent="center"
-                                alignItems="center"
-                            >
-                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => setProductData(Product)}>All|</button>
-                                </Grid>
-                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("aluminium")}>Aluminium|</button>
-                                </Grid>
-                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("falseCeiling")}>False Ceiling|<span className='dot'></span></button>
-                                </Grid>
-                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("woodflooring")}>Wooden floor|<span className='dot'></span></button>
-                                </Grid>
-                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("glasspaper")}>Glass paper|<span className='dot'></span></button>
-                                </Grid>
-                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("wallpic")}>Wall picture<span className='dot'></span></button>
-                                </Grid>
-                                <Grid item xs={4} lg={2} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("wallpaper")}>Wall paper<span className='dot'></span></button>
-                                </Grid>
-                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("windowblind")}>Window blind<span className='dot'></span></button>
-                                </Grid>
-                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("vinyleflooring")}>Vinyle flooring<span className='dot'></span></button>
-                                </Grid>
-                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("fupvcdoor")}>Upvc Door<span className='dot'></span></button>
-                                </Grid>
-                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("carpets")}>Carpets<span className='dot'></span></button>
-                                </Grid>
-                                <Grid item xs={4} lg={1} md={2.4} sm={2.4}>
-                                    <button className='btn-menu' onClick={() => filterItem("walltexture")}>Wall Texture<span className='dot'></span></button>
-                                </Grid>
-
-
-                            </Grid>
-                            <hr className='menu-line' />
-                        </Box>
+                        <div>
+                        <button className='btn-menu' onClick={() => setProductData(Product)}>All<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("aluminium")}>Aluminium<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("falseCeiling")}>False Ceiling<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("woodflooring")}>Wooden floor<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("glasspaper")}>Glass paper<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("wallpic")}>Wall picture<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("wallpaper")}>Wall paper<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("windowblind")}>Window blind<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("vinyleflooring")}>Vinyle flooring<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("fupvcdoor")}>Upvc Door<span className='vline'>|</span></button>
+                        <button className='btn-menu' onClick={() => filterItem("carpets")}>Carpets<span className='vline'>|</span></button>
+                         <button className='btn-menu' onClick={() => filterItem("walltexture")}>Wall Texture</button>
+                        </div>
 
                         {/* <button className='btn-group__item' onClick={() => setProductData(Product)}>All</button>
         <button className='btn-group__item' onClick={() => filterItem("aluminium")}>Aluminium</button>
