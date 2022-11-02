@@ -10,21 +10,19 @@ import Services from './Components/Services';
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import Header  from './Components/Header';
+import Navbar from './Components/Navbar';
 
 const App = () => {
   return (
     <>
-    <Header/>
-      <Navbars />
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route exact path='portfolio' element={<Portfolio />} />
-          <Route exact path='services' element={<Services />} />
-          <Route exact path='contactus' element={<Contact />} />
+          <Route exact path='/portfolio' element={<Portfolio />} />
+          <Route exact path='/services' element={<Services />} />
+          <Route exact path='/contactus' element={<Contact />} />
         </Routes>
-
-      </BrowserRouter>
+      </BrowserRouter> 
     </>
   )
 }

@@ -7,15 +7,17 @@ import Services from './Services';
 import Footer from './Footer';
 import Concepts from './Concepts';
 import Contact from './Contact';
-import Navbars from './Navbars';
 import Product from './Product'
 import ServicesSection from './ServicesSection';
+import Navbar from './Navbar';
+import Header from './Header';
 
 
 const Home = () => {
   return (
     <>
-
+    <Header/>
+    <Navbar/>
       <div className="mainContainer" id='home'>
         
         <div className="imageContainer">

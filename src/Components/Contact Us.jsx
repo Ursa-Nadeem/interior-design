@@ -9,18 +9,19 @@ import { BsTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import Footer from './Footer'
 import Roll from 'react-reveal/Roll';
+import Navbar from './Navbar';
+import Header from './Header';
 
 import { Box } from '@mui/system'
 
 const ContactUs = () => {
   return (
     <>
-
+    <Header/>
+      <Navbar/>
       <div className='mainPortfolio'>
 
         {/* images */}
-
-
         <div className="portfolioText" id='portfolio'>
           <Roll left>
             <h1 style={{ color: '#FE9C40', fontSize: '70px' }}>CONTACT US</h1>

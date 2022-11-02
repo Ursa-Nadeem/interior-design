@@ -5,7 +5,8 @@ import ProductCard from './ProductCard';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Footer from './Footer'
-import Navbars from './Navbars';
+import Navbar from './Navbar';
+import Header from './Header';
 
 
 const Services = () => {
@@ -20,6 +21,8 @@ const Services = () => {
     }
     return (
         <>
+            <Header/>
+    <Navbar/>
             <div className='main-services' id='services'>
                 {/* <Navbars/> */}
                 <div className="serviceText">
