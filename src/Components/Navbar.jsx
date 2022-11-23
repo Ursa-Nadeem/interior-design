@@ -17,7 +17,7 @@ const Navbar = () => {
 
         {/* Menu */}
         <div className={showMediaIcons ? 'menu-link mobile-menu-link' : 'menu-link'}>
-          <ul>
+          <ul className='nav-menu'>
             <li>
               <Link to='/'>Home</Link>
             </li>
@@ -50,6 +50,8 @@ const Navbar = () => {
             })}>
               <GiHamburgerMenu />
             </Link>
+            {/* <GiHamburgerMenu size={20} style={{color: '#FFF'}}/> */}
+
           </div>
         </div>
       </nav>

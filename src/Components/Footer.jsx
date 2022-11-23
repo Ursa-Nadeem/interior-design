@@ -82,7 +82,7 @@ const Footer = () => {
       >
         <Container maxWidth="lg" className='footer-section'>
           <Grid container spacing={6}>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} lg={3} >
               <Box>
                 <h2 className="Heading">Features</h2>
               </Box>
@@ -97,7 +97,7 @@ const Footer = () => {
               })}
             </Grid>
             {/* contact us */}
-            <Grid item xs={12} sm={6} md={6}>
+            <Grid item xs={12} sm={6} md={6} lg={6} >
               <Box>
                 <h2 className="Heading">Contact Us</h2>
               </Box>
@@ -116,11 +116,11 @@ const Footer = () => {
               })}
 
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} lg={3} >
               <Box>
                 <h2 className="Heading">Socials</h2>
-                <span style={{ display: "flex" }}><a href='www.facebook.com/viewerscollection'><FacebookIcon color='#fff' size='2rem' className='fbicon' /></a>
-                  <InstagramIcon color='#fff' size='2rem' className='intaicon' /></span>
+                <span style={{ display: "flex" }}><a href='https://www.facebook.com/profile.php?id=100057474128614'><FacebookIcon color='#fff' size='2rem' className='fbicon' /></a>
+                  <InstagramIcon color='#fff' size='2rem' className='instaicon' /></span>
               </Box>
 
             </Grid>

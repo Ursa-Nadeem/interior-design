@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+  }
+  ul{
+    list-style-type: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    /* background-color:#e8e5de ;
+    opacity: 0.6; */
+    background-color: #e8e5de;
+    /* background-color: white; */
+    box-shadow: 5px 4px 3px rgb(0 0 0 / 10%);
+
+}
+
+/* #e8e5de */
+.nav-menu{
+    display: flex;
+    
+}
+.nav-menu li{
+    padding: 0 2rem;
+}
+.nav-menu li a{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .hamburger{
+    display: none;
+  }
+ .logo{
+    width:'100%';
+     height:'200px';
+     margin-left:'40px';
+ }
+ .social-media {
+  grid-column: 4/5;
+}
+ .social-media ul {
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-media ul li {
+  text-align: right;
+ 
+}
+
+.social-media ul li:first-child {
+  /* grid-column: 2/3; */
+} 
+.social-media ul li {
+  font-size: 1.7rem;
+}
+.facebook {
+  color: #3b5998;
+}
+
+.instagram {
+  color: #c32aa3;
+}
+ 
+  @media (max-width: 1040px){
+    .nav-menu{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 0;
+      left: -100%;
+      z-index: -3;
+      transition: 0.3s;
+      color: white;
+    }
+    a {
+      text-decoration: none !important;
+      color: white !important;
+    }
+    .header{
+      background-color: #e8e5de;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .nav-menu li{
+      padding: 1rem 0;
+     
+    }
+    .nav-menu li a{
+      font-size: 2rem;
+    }
+    .hamburger{
+        display: initial !important;
+    }
+    .logo{
+        margin-top: 10px !important;
+        margin-left: 10px !important;
+    }
+    .social-media .social-media-desktop {
+      height: 0;
+      display: none;
+    }
+  
+    .social-media {
+      height: 7rem;
+      display: flex;
+      justify-self: end;
+      align-items: center;
+    }
+  }

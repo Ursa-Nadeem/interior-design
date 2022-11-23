@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 import Footer from './Footer'
 import Navbar from './Navbar';
 import Header from './Header';
-
+import Navbartop from './Navbartop';
 
 const Services = () => {
     const [productData, setProductData] = useState(Product);
@@ -21,14 +21,14 @@ const Services = () => {
     }
     return (
         <>
-            <Header/>
-    <Navbar/>
+            {/* <Header/> */}
+            <Navbartop/>
             <div className='main-services' id='services'>
                 {/* <Navbars/> */}
                 <div className="serviceText">
-                    <Roll left>
+                    {/* <Roll left> */}
                         <h1 className='service-heading' style={{ color: '#FE9C40', fontSize: '70px' }}>OUR SERVICES</h1>
-                    </Roll>
+                    {/* </Roll> */}
                 </div>
             </div>
             {/* // pl={{ sm: 9 }} pr={{ sm: 5 }} */}

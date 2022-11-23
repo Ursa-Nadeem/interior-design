@@ -12,6 +12,7 @@ import Office from './Office'
 import Footer from './Footer'
 import Navbar from './Navbar';
 import Header from './Header';
+import Navbartop from './Navbartop';
 
 const livingRooms = [
   {
@@ -36,8 +37,8 @@ const livingRooms = [
 const Portfolio = () => {
   return (
     <>
-    <Header/>
-    <Navbar/>
+    {/* <Header/> */}
+    <Navbartop/>
       <div className='mainPortfolio'>
      
         {/* images */}

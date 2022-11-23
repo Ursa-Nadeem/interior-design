@@ -11,21 +11,22 @@ import Footer from './Footer'
 import Roll from 'react-reveal/Roll';
 import Navbar from './Navbar';
 import Header from './Header';
+import Navbartop from './Navbartop';
 
 import { Box } from '@mui/system'
 
 const ContactUs = () => {
   return (
     <>
-    <Header/>
-      <Navbar/>
+    {/* <Header/> */}
+    <Navbartop/>
       <div className='mainPortfolio'>
 
         {/* images */}
         <div className="portfolioText" id='portfolio'>
           <Roll left>
             <h1 style={{ color: '#FE9C40', fontSize: '70px' }}>CONTACT US</h1>
-            <hr className='contact-line' />
+            {/* <hr className='contact-line' /> */}
             <p style={{ fontSize: '20px' }}>ANSWER TO YOUR ALL QUESTIONS</p>
           </Roll>
         </div>

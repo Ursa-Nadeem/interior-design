@@ -8,7 +8,7 @@ import image6 from "../Assets/vinyl-flooring.jpg";
 import image7 from "../Assets/wallpaper.jpg";
 import image8 from "../Assets/wallpic.jpg";
 import image9 from "../Assets/glasspaper.jpg";
-import image10 from '../Assets/about img.jpg';
+import image10 from '../Assets/banner190.webp';
 import image11 from '../Assets/wall texture/texture1.jpg';
 import image12 from '../Assets/carpets/carpet2.webp';
 import Container from 'react-bootstrap/Container';
